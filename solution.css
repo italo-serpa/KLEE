@@ -1,0 +1,266 @@
+.solution {
+    height: 650px;
+    width: 100vw;
+    background-color: #042734;
+}
+
+.solution h1 {
+    color: #ddd9d4;
+    padding-top: 40px;
+    padding-left: 400px;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+    position: relative;
+    z-index: 0;
+}
+
+.solution__board {
+    width: 88vw;
+    height: 65vh;
+    border: solid 9px #ffb469;
+    position: relative;
+    z-index: 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 20px 10px #ff941e;
+    background-color: #002231;
+    line-height: 20px;
+}
+
+.solution__board-front,
+.solution__board-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.solution__board-card {
+    border: solid 3px #ffb469;
+    box-shadow: 0px 0px 3px 3px #ff941e;
+    width: 160px;
+    height: 350px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    color:#ddd9d4;
+    font-weight: bold;
+    text-align: center;
+    opacity: 1;
+    cursor: pointer;
+    position: relative;
+    transition: transform 1s, opacity 0.5s;
+    transform-style: preserve-3d;
+}
+
+.solution__board-card button {
+    padding: 5px;
+    background-color: #ff8400;
+    border-radius: 10px;
+    color: #042734;
+    cursor: pointer;
+}
+
+.solution__board-card img {
+    width: 80px;
+    height: 80px;
+}
+
+.solution__board-card li {
+    list-style: none;
+    font-size: 0.8rem;
+    width: 130px;
+    border: solid 2px white;
+    border-radius: 20px;
+    line-height: 16px;
+    padding: 5px;
+}
+
+.solution__board-card ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 320px;
+    font-weight: normal;
+}
+
+
+#exit {
+    width: 20px;
+    height: 20px;
+    padding-bottom: 10px;
+}
+
+.oculto {
+    transform: rotateY(180deg);
+    opacity: 0;
+}
+
+#cta__solution {
+    margin: 0 auto;
+    margin-top: 40px;
+}
+
+.blog {
+    width: 100vw;
+    height: 800px;
+    background-color: #ddd9d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog__titulo h1 {
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+.blog__container {
+    display: flex;
+    padding-top: 40px;
+    margin: 0 auto;
+    width: 85vw;
+    justify-content: space-between;
+}
+
+.blog__destaque {
+    width: 35vw;
+}
+
+.blog__destaque img {
+    width: 35vw;
+    height: 280px;
+    border-radius: 35px;
+}
+
+.blog__destaque h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.7rem;
+    padding-top: 20px;
+    padding-left: 5px;
+    line-height: 33px;
+    font-weight: 500;
+}
+
+.blog__destaque p {
+    padding-left: 5px;
+    padding-top: 20px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.blog__novidades {
+    width: 45vw;
+}
+
+.blog__novidades-new {
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-bottom: solid 2px black;
+}
+
+#last {
+    border-bottom: none;
+}
+
+.blog__novidades-new img {
+    width: 200px;
+    height: 200px;
+    border-radius: 35px;
+}
+
+.blog__novidades-new h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    line-height: 25px;
+    font-weight: 500;
+}
+
+.blog__texto {
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.blog__texto p {
+    text-align: justify;
+}
+
+.historia {
+    width: 100vw;
+    height: 700px;
+    padding-top: 80px;
+    display: flex;
+    background-color: #ddd9d4;
+    justify-content: space-around;
+}
+
+.historia__texto {
+    width: 40vw;
+    padding-left: 60px;
+}
+
+.historia__texto h1 {
+    font-size: 2.5rem;
+    padding-top: 40px;
+}
+
+.historia__texto p {
+    padding-top: 20px;
+    text-align: justify;
+    width: 485px;
+    line-height: 20px;
+}
+
+.pessoas {
+  width: 40vw;
+  display: flex;
+  padding-top: 35px;
+}
+
+.pessoas img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.pessoa {
+    display: flex;
+    width: 20vw;
+}
+
+.iden {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 15vw;
+    padding-left: 15px;
+}
+
+.iden p {
+    padding-top: 0px;
+    width: 15vw;
+}
+
+.video {
+    height: 380px;
+    width: 48vw;
+}
+.video img {
+    height: 350px;
+    width: 45vw;
+    padding-right: 100px;
+    padding-top: 60px;
+}

@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+}
+
+.homepage {
+  width: 100vw;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.hero {
+  height: 499px;
+  width: 100vw;
+  background-color: #ddd9d4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1368px;
+}
+
+.hero__text {
+  width: 45vw;
+  padding-left: 60px;
+  padding-top: 90px;
+  position: relative;
+  z-index: 3;
+}
+
+.hero__text-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  line-height: 45px;
+  padding-bottom: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  letter-spacing: 2px;
+  /* text-shadow: -1px -1px 0 red, 1px -1px 0 red, -1px 1px 0 red,
+    1px 1px 0 red; */
+}
+
+.hero__text-content p {
+  text-align: justify;
+  padding-bottom: 20px;
+  width: 520px;
+  line-height: 20px;
+}
+
+.hero__text-cta {
+  background-color: #ff941e;
+  border-radius: 25px;
+  padding: 10px 15px;
+  width: 190px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.hero__text-cta:hover {
+  background-color: #e87800;
+}
+
+.hero__text-cta-button {
+  cursor: pointer;
+}
+
+.hero__image-container {
+  width: 50vw;
+  height: 50vh;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.hero__image {
+  width: 600px;
+  height: 900px;
+  overflow: hidden;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.hero__image-slider {
+  display: flex;
+  width: 600px;
+  height: 850px;
+  transition: transform 0.5s ease-in-out;
+  position: absolute;
+  top: -20px;
+  right: -40px;
+}
+
+.hero__image-slider img {
+  width: 610px;
+  height: 850px;
+  object-fit: cover;
+}
+
+.hero__image-ray {
+  width: 610px;
+  height: 900px;
+  position: absolute;
+  top: -250px;
+  right: -10px;
+}
+
+.hero__image-ray img {
+  width: 600px;
+}

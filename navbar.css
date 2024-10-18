@@ -1,0 +1,131 @@
+.navbar {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  width: 100vw;
+}
+
+.navbar__container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  max-width: 1368px;
+  height: auto;
+  background-color: #ddd9d4;
+  z-index: 1;
+}
+
+.navbar__background {
+  position: fixed;
+  width: 100vw;
+  height: 67px;
+  background-color: #ddd9d4;
+  z-index: 2;
+}
+
+.navbar__image {
+  position: relative;
+  cursor: pointer;
+  width: 150px;
+  z-index: 3;
+}
+
+.navbar__links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  align-items: center;
+  z-index: 3;
+}
+
+.navbar__links-link {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.navbar__links-link:hover {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.navbar__cta {
+  background-color: #ff941e;
+  border-radius: 25px;
+  padding: 10px 15px;
+  color: white;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.navbar__cta:hover {
+  background-color: #ff8400;
+  cursor: pointer;
+}
+
+.navbar__button {
+  display: none;
+  cursor: pointer;
+  padding-top: 5px;
+  z-index: 3;
+}
+
+.bar {
+  display: block;
+  width: 30px;
+  height: 5px;
+  margin: 5px auto;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 850px) {
+  .navbar__image {
+    padding-right: 40vw;
+  }
+  .navbar__button {
+    display: block;
+  }
+  .navbar__links {
+    position: absolute;
+    top: -210px;
+    transition: all 0.7s ease;
+    flex-direction: column;
+    background-color: #ddd9d4;
+    width: 100vw;
+    z-index: 1;
+  }
+
+  .navbar__links.active {
+    top: 67px;
+  }
+
+  .navbar__links-link {
+    padding-bottom: 15px;
+  }
+
+  .navbar__cta {
+    position: absolute;
+    top: -40px;
+    width: 100vw;
+    height: 40px;
+    transition: all 0.7s ease;
+    border-radius: 0px;
+    padding: 10px 15px;
+    z-index: 1;
+  }
+  .navbar__cta.active {
+    top: 230px;
+  }
+  .navbar__button.active .bar:nth-child(1) {
+    transform: translateY(10px) rotate(45deg);
+  }
+  .navbar__button.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .navbar__button.active .bar:nth-child(3) {
+    transform: translateY(-10px) rotate(-45deg);
+  }
+}

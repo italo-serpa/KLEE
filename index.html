@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KL Engenharia Elétrica</title>
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="navbar.css" />
+  <link rel="stylesheet" href="hero.css" />
+  <link rel="stylesheet" href="solution.css" />
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <div class="navbar__background"></div>
+      <a onclick="navigateTo('hero')">
+        <img src="./assets/logo.png" alt="Logo da KL Engenharia Elétrica" class="navbar__image" />
+      </a>
+      <div class="navbar__links">
+        <a onclick="navigateTo('solution')" class="navbar__links-link">Soluções</a>
+        <a onclick="navigateTo('blog')" class="navbar__links-link">Blog</a>
+        <a onclick="navigateTo('story')" class="navbar__links-link">História</a>
+        <a onclick="navigateTo('partners')" class="navbar__links-link">Parceiros</a>
+      </div>
+      <button class="navbar__cta"><a href=""></a>FAÇA SEU ORÇAMENTO</button>
+      <div class="navbar__button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+    <script>
+      function navigateTo(sectionId) {
+        document.getElementById(sectionId).scrollIntoView({ behavior: "smooth" });
+        history.pushState(null, null, window.location.pathname);
+        return false;
+      }
+    </script>
+  </nav>
+  <section class="homepage">
+    <div class="hero" id="hero">
+      <div class="hero__text">
+        <div class="hero__text-content">
+          <h1>
+            SOLUÇÕES COMPLETAS <br />
+            EM ENGENHARIA ELÉTRICA <br />
+            E METALURGIA
+          </h1>
+          <p>
+            A KL Engenharia ELétrica tem como compromisso a mais alta qualidade em cada um dos seus projetos. Entregamos
+            soluções completas em engenharia elétrica e metalurgia, com uma equipe altamente preparada, capaz garantir a
+            segurança técnica e normativa de todas as suas instalações. Respeitando o legado da Esfera Construções
+            Metálicas, vamos honrar e respeitar a confiança depositada por cada cliente, impulsionando a próxima geração
+            de líderes de mercado.
+          </p>
+        </div>
+        <div class="hero__text-cta">
+          <button class="hero__text-cta-button">FAÇA SEU ORÇAMENTO</button>
+        </div>
+      </div>
+    </div>
+    <div class="hero__image-container">
+      <div class="hero__image">
+        <div class="hero__image-slider">
+          <img src="./assets/carrossel 1.jpg" alt="" />
+          <img src="./assets/quadro.jpeg" alt="" />
+          <img src="./assets/sede.jpeg" alt="" />
+          <img src="./assets/quadro 2.jpeg" alt="">
+        </div>
+      </div>
+      <div class="hero__image-ray">
+        <img src="./assets/raio v3.png" alt="">
+      </div>
+    </div>
+    <div class="solution" id="solution">
+      <div class="solution__text">
+        <h1>CONHEÇA NOSSAS SOLUÇÕES</h1>
+      </div>
+      <div class="solution__board">
+        <div class="solution__board-back">
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>Quadro de distribuição</li>
+              <li>Quadro de automação</li>
+              <li>Barramento geral de entrada</li>
+              <li>Centro de comando de motores</li>
+              <li>Quadro de medição de energia</li>
+              <li>Conjunto de barramento</li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>Fabricante homologado pela CEB / Neoenergia</li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>CBT conforme NTD 3.37 CEB</li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>Painel de controle de bombas</li>
+              <li>Painel de controle de elevador</li>
+              <li>Painel de controle de exaustão</li>
+              <li>Quadro de transferência automática - QTA </li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>Elaboração de projetos</li>
+              <li>Suporte para painel solar</li>
+              <li>Stringbox para usina solar</li>
+              <li></li>
+              <li></li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+          <div class="solution__board-card oculto">
+            <ul>
+              <li>Painéis de montagem</li>
+              <li>Caixas para telefonia</li>
+              <li>Caixas para hidrante</li>
+              <li>Caixas de passagem</li>
+              <li>Portas metálicas</li>
+            </ul>
+            <img src="./assets/cancelar.png" alt="Ícone para sair dos detalhes" id="exit">
+          </div>
+        </div>
+        <div class="solution__board-front">
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 3.svg" alt="">
+            <h2>Quadros <br> Elétricos</h2>
+            <button>Detalhes</button>
+          </div>
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 2.svg" alt="">
+            <h2>Quadro de Medição</h2>
+            <button>Detalhes</button>
+          </div>
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 5.svg" alt="">
+            <h2>Conjuntos de Distribuição em BT</h2>
+            <button>Detalhes</button>
+          </div>
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 1.svg" alt="">
+            <h2>Automação <br> Predial / Industrial </h2>
+            <button>Detalhes</button>
+          </div>
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 4.svg" alt="">
+            <h2>Soluções em Energia Solar</h2>
+            <button>Detalhes</button>
+          </div>
+          <div class="solution__board-card">
+            <img src="./assets/Ativo 6.svg" alt="">
+            <h2>Metalurgia Sob Encomenda</h2>
+            <button>Detalhes</button>
+          </div>
+        </div>
+      </div>
+      <div class="hero__text-cta" id="cta__solution">
+        <button class="hero__text-cta-button">FAÇA SEU ORÇAMENTO</button>
+      </div>
+    </div>
+  </section>
+  <section class="blog">
+    <div class="blog__titulo">
+      <h1>CONHEÇA NOSSO BLOG</h1>
+    </div>
+    <div class="blog__container">
+      <div class="blog__destaque">
+        <img src="./assets/fundo blog.png" alt="">
+        <h1>Os artigos serão publicados em breve, fique de olho nas novidades</h1>
+        <p>Uma breve introdução ao artigo será descrita aqui. O objetivo é chamar a atenção e resumir o artigo em
+          poucas palavras. No caso da página de destaque o artigo preenche um espaço maior para que preencha mais
+          espaço em relação ao conteúdo. Tudo isso está sendo escrito com o objetivo de engordar o texto para ficar
+          cada vez maior. A filosifia moderna se aprofundou tanto no pensamento humano que se desconectou da realidade
+          vigente e portanto não mais representa uma visão da realidade.</p>
+        <p id="grey">Atualizado em 15/10/2024</p>
+      </div>
+      <div class="blog__novidades">
+        <div class="blog__novidades-new">
+          <img src="./assets/fundo blog.png" alt="">
+          <div class="blog__texto">
+            <h1>Os artigos serão publicados em breve, fique de olho nas novidades</h1>
+            <p>Uma breve introdução ao artigo será descrita aqui. O objetivo é chamar a atenção e resumir o artigo em
+              poucas palavras.</p>
+            <p id="grey">Atualizado em 15/10/2024</p>
+          </div>
+        </div>
+        <div class="blog__novidades-new">
+          <img src="./assets/fundo blog.png" alt="">
+          <div class="blog__texto">
+            <h1>Os artigos serão publicados em breve, fique de olho nas novidades</h1>
+            <p>Uma breve introdução ao artigo será descrita aqui. O objetivo é chamar a atenção e resumir o artigo em
+              poucas palavras.</p>
+            <p id="grey">Atualizado em 15/10/2024</p>
+          </div>
+        </div>
+        <div class="blog__novidades-new" id="last">
+          <img src="./assets/fundo blog.png" alt="">
+          <div class="blog__texto">
+            <h1>Os artigos serão publicados em breve, fique de olho nas novidades</h1>
+            <p>Uma breve introdução ao artigo será descrita aqui. O objetivo é chamar a atenção e resumir o artigo em
+              poucas palavras.</p>
+            <p id="grey">Atualizado em 15/10/2024</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="historia">
+    <div class="historia__texto">
+      <h1>CONHEÇA A HISTÓRIA <br> DA KL ENGENHARIA ELÉTRICA</h1>
+      <p>A KL Engenharia Elétrica é o resultado de uma longa
+        tradição familiar, passada de geração em geração,
+        agora liderada por Lucas Lessa. O nome "KL" carrega
+        um profundo significado, sendo um acrônimo do nome
+        de seu filho, Kael, simbolizando o compromisso com o
+        futuro e a energia que impulsiona a empresa. A
+        trajetória de Lucas, moldada por sua herança familiar
+        e paixão pela engenharia elétrica, está refletida na 
+        excelência do atendimento, produtos e serviços.</p>
+      <div class="pessoas">
+        <div class="pessoa">
+          <img src="./assets/fundo blog.png" alt="">
+          <div class="iden">
+            <p id="bold">Marcelo Lessa</p>
+            <p>Engenheiro Elétrico</p>
+          </div>
+        </div>
+        <div class="pessoa">
+          <img src="./assets/fundo blog.png" alt="">
+          <div class="iden">
+            <p id="bold">Lucas Lessa</p>
+            <p>Diretor de Operações</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="video">
+      <img src="./assets/fundo blog.png" alt="">
+    </div>
+  </section>
+  <script src="app.js"></script>
+</body>
+
+</html>
